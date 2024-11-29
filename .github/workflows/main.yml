@@ -20,10 +20,10 @@ jobs:
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
 
       - name: "Building image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/NadaOsamaAhmedAli .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME}}/NadaOsamaAhmedAli .
 
       - name: "Pushing image to Docker hub"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/NadaOsamaAhmedAli
+        run: docker push ${{ secrets.DOCKER_USERNAME}}/NadaOsamaAhmedAli
 
 
 
